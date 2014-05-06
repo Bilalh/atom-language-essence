@@ -1,0 +1,61 @@
+'fileTypes': [
+  'essence'
+  'eprime'
+  'param'
+  'rule'
+  'repr'
+  'solution'
+  'eprime-solution'
+  'eprime.solution'
+  'essence-solution'
+  'essence-param'
+  'eprime-param'
+  'eprime.param'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'Essence'
+'patterns': [
+  {
+    'match': '\\b(forall|allDifferent|dim|toSet|toMSet|toRelation|maximising|minimising|forAll|exists|toInt|sum|be|bijective|bool|by|complete|defined|domain|in|false|find|from|function|given|image|indexed|injective|int|intersect|freq|lambda|language|letting|matrix|maxNumParts|maxOccur|maxPartSize|maxSize|minNumParts|minOccur|minPartSize|minSize|mset|numParts|of|partial|partition|partSize|preImage|quantifier|range|regular|relation|representation|set|size|subset|subsetEq|such|supset|supsetEq|surjective|that|together|enum|total|true|new|type|tuple|union|where|branching|on)\\b'
+    'name': 'keyword.control.essence'
+  }
+  {
+    'match': '(<=lex|>=lex|<lex|>lex|=|!=|<=|>=|<|>)'
+    'name': 'constant.language.comparison.essence'
+  }
+  {
+    'match': '(!|->|<->|/\\\\|\\\\/|\\|)'
+    'name': 'constant.language.logical.essence'
+  }
+  {
+    'match': '(\\-|\\+|\\*|%|\\^|\\/)'
+    'name': 'constant.language.arithmetic.essence'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.essence'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.essence'
+      }
+    ]
+  }
+  {
+    'begin': '\\$'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.essence'
+    'end': '$\\n?'
+    'name': 'comment.line.character.essence'
+    'patterns': [
+      {
+        'match': '(?<!\\\\)\\\\$\\n'
+        'name': 'punctuation.separator.continuation.essence'
+      }
+    ]
+  }
+]
+'scopeName': 'source.essence'

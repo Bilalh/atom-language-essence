@@ -1,8 +1,7 @@
 {
   "name": "language-essence",
-  "main": "./lib/language-essence",
   "version": "1.0.0",
-  "description": "A short description of your package",
+  "description": "Essence syntax highlighting for Atom",
   "activationEvents": ["language-essence:toggle"],
   "repository": {
     "type": "git",
