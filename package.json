@@ -2,7 +2,6 @@
   "name": "language-essence",
   "version": "1.0.0",
   "description": "Essence syntax highlighting for Atom",
-  "activationEvents": ["language-essence:toggle"],
   "repository": {
     "type": "git",
     "url": "https://github.com/Bilalh/atom-language-essence.git"
