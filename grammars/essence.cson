@@ -11,6 +11,8 @@
   'essence-param'
   'eprime-param'
   'eprime.param'
+  'essence.givens'
+  'essence.finds'
 ]
 'foldingStartMarker': '/\\*\\*|\\{\\s*$'
 'foldingStopMarker': '\\*\\*/|^\\s*\\}'
